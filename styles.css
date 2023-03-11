@@ -6,6 +6,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+svg{
+    width: 25px;
+}
+
 .container{
     min-height: 100vh;
     display: grid;
@@ -16,6 +20,25 @@
 .header{
     background-color: #FFF;
     grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    grid-template-rows: 70px 1fr;
+}
+
+.header div{
+    border: 1px solid black;
+}
+
+.search-bar{
+    padding-left: 4rem;
+}
+
+input[type="search"]{
+    background-color: #e0f2fe;
+    border: none;
+    border-radius: 1rem;
+    width: 50%;
+    padding: 0.2rem;
 }
 
 .sidebar{
@@ -64,7 +87,7 @@ li svg{
     fill: #FFF;
 }
 
-li a{
+li a, .search-bar{
     display: flex;
     align-items: center;
     gap: 1rem;
