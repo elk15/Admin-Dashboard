@@ -11,18 +11,71 @@
 }
 
 .header{
-    background-color: white;
+    background-color: #FFF;
     grid-column-start: 2;
 }
 
 .sidebar{
-    background-color: rgb(22, 154, 230);
+    background-color: #0284c7;
     grid-column: 1/2;
     grid-row: 1/ span 2;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 100px 30% 20%;
+    padding-left: 1rem;
+
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;  
+}
+
+.sidebar h1{
+    color: #FFF;
+    align-self: center;
+    
+}
+
+h1{
+    /* display: grid;
+    grid-template-columns: 20% 1fr;
+    justify-content: center */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1 svg{
+    width: 40px;
+    fill: #FFF;
+}
+
+ul{
+    list-style-type: none;
+    font-weight: bold;
+}
+
+li svg{
+    width: 25px;
+    fill: #FFF;
+}
+
+li a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-1, .menu-2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .main{
-    background-color: rgb(199, 198, 198);
+    background-color: #e0f2fe;
     grid-column-start: 2;
     grid-row-start: 2;
 }
