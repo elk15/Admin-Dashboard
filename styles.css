@@ -236,5 +236,18 @@ hr{
     padding-top: 0;
 }
 
+li:hover a, li:hover svg{
+
+    color: #053a55;
+
+
+    fill: #053a55;
+    
+}
+
+.buttons button:hover{
+    background-color: #053a55;
+}
+
 
 
