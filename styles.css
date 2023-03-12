@@ -141,7 +141,7 @@ li svg{
 
 /* Align icons */
 
-li a, .search-bar, .small-name{
+li a, .search-bar, .small-name, .project-icons{
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -158,4 +158,48 @@ li a, .search-bar, .small-name{
     background-color: #e0f2fe;
     grid-column-start: 2;
     grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 1fr max(300px, 20%);
+    
+}
+
+.main > div{
+    border: 1px solid black;
+    
+}
+
+.your-projects{
+    grid-row: 1/span 2;
+    padding: 2rem;
+    
+}
+
+.your-projects > h1{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax( 350px, 1fr));
+    gap: 2rem;
+}
+
+.project{
+    border-left: 5px solid orange;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    box-shadow: 5px 4px 9px 0px #9E9797;
+}
+
+.project  p {
+    color: rgb(87, 85, 85);
+}
+
+.project-icons{
+    align-self: flex-end;
 }
